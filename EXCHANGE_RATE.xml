@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Sampath Bank Exchange Rates for UK Pound T/T Buying" >
+<!--    <listeners>-->
+<!--        <listener class-name="systems.Telemetry"/>-->
+<!--    </listeners>-->
+
+    <parameter name="testng_target" value="offline"/>
+    <parameter name="testng_mode" value="prod"/>
+    <parameter name="testng_browser" value="firefox"/>
+    <parameter name="testng_environment" value="uat02"/>
+    <parameter name="testng_domain" value="sts"/>
+
+    <test name="Sampath Bank Exchange Rates for UK Pound T/T Buying">
+        <classes>
+            <class name="tests.SampathBank" />
+        </classes>
+    </test>
+
+</suite>
